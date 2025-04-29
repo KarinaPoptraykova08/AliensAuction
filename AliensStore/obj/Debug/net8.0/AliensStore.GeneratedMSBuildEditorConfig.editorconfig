@@ -30,26 +30,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Antonia/Desktop/AliensAuction/AliensStore/Views/Aliens/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpZW5zXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Antonia/Desktop/AliensAuction/AliensStore/Views/Aliens/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpZW5zXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Antonia/Desktop/AliensAuction/AliensStore/Views/Aliens/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpZW5zXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Antonia/Desktop/AliensAuction/AliensStore/Views/Aliens/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpZW5zXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Antonia/Desktop/AliensAuction/AliensStore/Views/Aliens/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpZW5zXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Antonia/Desktop/AliensAuction/AliensStore/Views/Galaxies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsYXhpZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

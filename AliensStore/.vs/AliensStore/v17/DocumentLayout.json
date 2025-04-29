@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426122554_AddedAleins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20250426122554_AddedAleins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\controllers\\galaxiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:controllers\\galaxiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\controllers\\planetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:controllers\\planetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\controllers\\alienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:controllers\\alienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\data\\entity\\dealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:data\\entity\\dealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\data\\entity\\alien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +15,28 @@
       "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:data\\entity\\planet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\data\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:data\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\data\\entity\\galaxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:data\\entity\\galaxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\data\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:data\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426123921_AddedAliens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20250426123921_AddedAliens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426123804_UpdateAlienModels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20250426123804_UpdateAlienModels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\controllers\\galaxiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:controllers\\galaxiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|c:\\users\\antonia\\desktop\\aliensauction\\aliensstore\\controllers\\planetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE4C109D-5E26-44E9-A5DC-63926A36F6C0}|AliensStore.csproj|solutionrelative:controllers\\planetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,41 +46,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250426122554_AddedAleins.cs",
-              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426122554_AddedAleins.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20250426122554_AddedAleins.cs",
-              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426122554_AddedAleins.cs",
-              "RelativeToolTip": "Data\\Migrations\\20250426122554_AddedAleins.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "Dealer.cs",
+              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Dealer.cs",
+              "RelativeDocumentMoniker": "Data\\Entity\\Dealer.cs",
+              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Dealer.cs",
+              "RelativeToolTip": "Data\\Entity\\Dealer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T12:25:54.172Z",
+              "WhenOpened": "2025-04-26T12:42:46.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GalaxiesController.cs",
-              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Controllers\\GalaxiesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GalaxiesController.cs",
-              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Controllers\\GalaxiesController.cs",
-              "RelativeToolTip": "Controllers\\GalaxiesController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "Alien.cs",
+              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Alien.cs",
+              "RelativeDocumentMoniker": "Data\\Entity\\Alien.cs",
+              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Alien.cs",
+              "RelativeToolTip": "Data\\Entity\\Alien.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAwwA8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T12:24:08.659Z",
+              "WhenOpened": "2025-04-26T12:19:53.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "20250426123921_AddedAliens.cs",
+              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426123921_AddedAliens.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250426123921_AddedAliens.cs",
+              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426123921_AddedAliens.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250426123921_AddedAliens.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:39:21.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250426123804_UpdateAlienModels.cs",
+              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426123804_UpdateAlienModels.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250426123804_UpdateAlienModels.cs",
+              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Migrations\\20250426123804_UpdateAlienModels.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250426123804_UpdateAlienModels.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwA0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:38:04.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PlanetsController.cs",
               "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Controllers\\PlanetsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PlanetsController.cs",
@@ -84,51 +110,37 @@
               "RelativeToolTip": "Controllers\\PlanetsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T12:23:47.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T12:23:47.002Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AliensController.cs",
-              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Controllers\\AliensController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AliensController.cs",
-              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Controllers\\AliensController.cs",
-              "RelativeToolTip": "Controllers\\AliensController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T12:23:19.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Galaxy.cs",
               "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Galaxy.cs",
               "RelativeDocumentMoniker": "Data\\Entity\\Galaxy.cs",
               "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Galaxy.cs",
               "RelativeToolTip": "Data\\Entity\\Galaxy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T12:21:03.287Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Planet.cs",
               "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Planet.cs",
               "RelativeDocumentMoniker": "Data\\Entity\\Planet.cs",
               "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Planet.cs",
               "RelativeToolTip": "Data\\Entity\\Planet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T12:20:47.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Data\\Entity\\BaseEntity.cs",
@@ -141,16 +153,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Alien.cs",
-              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Alien.cs",
-              "RelativeDocumentMoniker": "Data\\Entity\\Alien.cs",
-              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Data\\Entity\\Alien.cs",
-              "RelativeToolTip": "Data\\Entity\\Alien.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAwAAAAfAAAA",
+              "DocumentIndex": 7,
+              "Title": "GalaxiesController.cs",
+              "DocumentMoniker": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Controllers\\GalaxiesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GalaxiesController.cs",
+              "ToolTip": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\Controllers\\GalaxiesController.cs",
+              "RelativeToolTip": "Controllers\\GalaxiesController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T12:19:53.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T12:24:08.659Z"
             }
           ]
         }

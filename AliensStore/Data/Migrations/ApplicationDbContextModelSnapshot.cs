@@ -50,6 +50,9 @@ namespace AliensStore.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsForSale")
+                        .HasColumnType("bit");
+
                     b.Property<int>("Legs")
                         .HasColumnType("int");
 
@@ -67,7 +70,7 @@ namespace AliensStore.Data.Migrations
 
                     b.HasIndex("PlanetId");
 
-                    b.ToTable("Alien", (string)null);
+                    b.ToTable("Alien");
                 });
 
             modelBuilder.Entity("AliensStore.Data.Entity.Galaxy", b =>
@@ -84,7 +87,7 @@ namespace AliensStore.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Galaxy", (string)null);
+                    b.ToTable("Galaxy");
                 });
 
             modelBuilder.Entity("AliensStore.Data.Entity.Planet", b =>
@@ -106,7 +109,7 @@ namespace AliensStore.Data.Migrations
 
                     b.HasIndex("GalaxyId");
 
-                    b.ToTable("Planet", (string)null);
+                    b.ToTable("Planet");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

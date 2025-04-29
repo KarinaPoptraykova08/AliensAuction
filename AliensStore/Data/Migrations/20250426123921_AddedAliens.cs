@@ -5,7 +5,7 @@
 namespace AliensStore.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class AddedAleins : Migration
+    public partial class AddedAliens : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -57,6 +57,7 @@ namespace AliensStore.Data.Migrations
                     Legs = table.Column<int>(type: "int", nullable: false),
                     Arms = table.Column<int>(type: "int", nullable: false),
                     Eyes = table.Column<int>(type: "int", nullable: false),
+                    IsForSale = table.Column<bool>(type: "bit", nullable: false),
                     PlanetId = table.Column<int>(type: "int", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },

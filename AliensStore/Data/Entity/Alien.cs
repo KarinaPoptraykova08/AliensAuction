@@ -11,9 +11,12 @@ namespace AliensStore.Data.Entity
         public string Color { get; set; }
 		public int Legs { get; set; }
 		public int Arms { get; set; }
-		public int Eyes { get; set; }	
-		public int PlanetId { get; set; }
+		public int Eyes { get; set; }
+        public bool IsForSale { get; set; }
+        public int PlanetId { get; set; }
 		public virtual Planet Planet { get; set; }
-		public string ImageUrl { get; set; }
+        //public int? DealerId { get; set; }
+        //public virtual Dealer? Dealer { get; set; }
+        public string ImageUrl { get; set; }
 	}
 }

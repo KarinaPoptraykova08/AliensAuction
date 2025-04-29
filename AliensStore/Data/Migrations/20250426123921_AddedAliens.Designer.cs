@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AliensStore.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250426122554_AddedAleins")]
-    partial class AddedAleins
+    [Migration("20250426123921_AddedAliens")]
+    partial class AddedAliens
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,9 @@ namespace AliensStore.Data.Migrations
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsForSale")
+                        .HasColumnType("bit");
 
                     b.Property<int>("Legs")
                         .HasColumnType("int");
