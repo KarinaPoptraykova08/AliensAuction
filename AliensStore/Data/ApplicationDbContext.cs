@@ -13,5 +13,6 @@ namespace AliensStore.Data
 	    public DbSet<AliensStore.Data.Entity.Alien> Alien { get; set; } = default!;
 	    public DbSet<AliensStore.Data.Entity.Planet> Planet { get; set; } = default!;
 	    public DbSet<AliensStore.Data.Entity.Galaxy> Galaxy { get; set; } = default!;
+	    public DbSet<AliensStore.Data.Entity.Dealer> Dealer { get; set; } = default!;
 	}
 }

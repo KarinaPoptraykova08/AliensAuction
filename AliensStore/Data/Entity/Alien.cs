@@ -15,8 +15,8 @@ namespace AliensStore.Data.Entity
         public bool IsForSale { get; set; }
         public int PlanetId { get; set; }
 		public virtual Planet Planet { get; set; }
-        //public int? DealerId { get; set; }
-        //public virtual Dealer? Dealer { get; set; }
-        public string ImageUrl { get; set; }
+		public int? DealerId { get; set; }
+		public virtual Dealer? Dealer { get; set; }
+		public string ImageUrl { get; set; }
 	}
 }

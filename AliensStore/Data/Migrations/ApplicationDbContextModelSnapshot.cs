@@ -43,6 +43,9 @@ namespace AliensStore.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("DealerId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Eyes")
                         .HasColumnType("int");
 
@@ -68,9 +71,35 @@ namespace AliensStore.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("DealerId");
+
                     b.HasIndex("PlanetId");
 
                     b.ToTable("Alien");
+                });
+
+            modelBuilder.Entity("AliensStore.Data.Entity.Dealer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("CurrentBalance")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Dealer");
                 });
 
             modelBuilder.Entity("AliensStore.Data.Entity.Galaxy", b =>
@@ -316,11 +345,17 @@ namespace AliensStore.Data.Migrations
 
             modelBuilder.Entity("AliensStore.Data.Entity.Alien", b =>
                 {
+                    b.HasOne("AliensStore.Data.Entity.Dealer", "Dealer")
+                        .WithMany("AlienList")
+                        .HasForeignKey("DealerId");
+
                     b.HasOne("AliensStore.Data.Entity.Planet", "Planet")
                         .WithMany("Aliens")
                         .HasForeignKey("PlanetId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Dealer");
 
                     b.Navigation("Planet");
                 });
@@ -385,6 +420,11 @@ namespace AliensStore.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("AliensStore.Data.Entity.Dealer", b =>
+                {
+                    b.Navigation("AlienList");
                 });
 
             modelBuilder.Entity("AliensStore.Data.Entity.Galaxy", b =>

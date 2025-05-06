@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\AliensStore.csproj": {}
+    "C:\\Users\\VivoBook\\Documents\\GitHub\\AliensAuction\\AliensStore\\AliensStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\AliensStore.csproj": {
+    "C:\\Users\\VivoBook\\Documents\\GitHub\\AliensAuction\\AliensStore\\AliensStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\AliensStore.csproj",
+        "projectUniqueName": "C:\\Users\\VivoBook\\Documents\\GitHub\\AliensAuction\\AliensStore\\AliensStore.csproj",
         "projectName": "AliensStore",
-        "projectPath": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\AliensStore.csproj",
-        "packagesPath": "C:\\Users\\Antonia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antonia\\Desktop\\AliensAuction\\AliensStore\\obj\\",
+        "projectPath": "C:\\Users\\VivoBook\\Documents\\GitHub\\AliensAuction\\AliensStore\\AliensStore.csproj",
+        "packagesPath": "C:\\Users\\VivoBook\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VivoBook\\Documents\\GitHub\\AliensAuction\\AliensStore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Antonia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\VivoBook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,20 +39,19 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -91,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
