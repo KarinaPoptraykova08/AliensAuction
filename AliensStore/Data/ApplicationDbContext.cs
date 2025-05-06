@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using AliensStore.Data.Entity;
+using Microsoft.AspNetCore.Identity;
 
 namespace AliensStore.Data
 {
-	public class ApplicationDbContext : IdentityDbContext
+	public class ApplicationDbContext : IdentityDbContext<IdentityUser, IdentityRole, string>
 	{
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
 			: base(options)

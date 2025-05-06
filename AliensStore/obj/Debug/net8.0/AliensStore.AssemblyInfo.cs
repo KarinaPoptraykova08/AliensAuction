@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AliensStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad83103f9e46064855433a9955ef636b12440e4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dbb0b3e2a35fab818b74f2118b181b24ed92da2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AliensStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AliensStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
