@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "QueenManager";
+}
+
+
+<h1>Panel</h1>
+
+<table class="table table-bordered table-striped table-hover table-sm align-middle">
+    <thead class="table-dark">
+        <tr>Email</tr>
+        <tr>Role</tr>
+        <tr>ChangeRoleTo</tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Email</td>
+                <td>@user.CurrentRole</td>
+                <td>
+                    <form asp-action="AlterRole">
+                        <input type="hidden" name="userId" value="@user.UserId" />
+                        <select name="role">
+                            <option value="">Choose new role</option>
+                            <option value="Queen">Queen</option>
+                            <option value="Dealer">Dealer</option>
+                        </select>
+
+                        <button type="submit">Alter role</button>
+                    </form>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>

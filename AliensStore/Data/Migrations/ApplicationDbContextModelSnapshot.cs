@@ -75,7 +75,7 @@ namespace AliensStore.Data.Migrations
 
                     b.HasIndex("PlanetId");
 
-                    b.ToTable("Alien");
+                    b.ToTable("Alien", (string)null);
                 });
 
             modelBuilder.Entity("AliensStore.Data.Entity.Dealer", b =>
@@ -99,7 +99,7 @@ namespace AliensStore.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Dealer");
+                    b.ToTable("Dealer", (string)null);
                 });
 
             modelBuilder.Entity("AliensStore.Data.Entity.Galaxy", b =>
@@ -116,7 +116,7 @@ namespace AliensStore.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Galaxy");
+                    b.ToTable("Galaxy", (string)null);
                 });
 
             modelBuilder.Entity("AliensStore.Data.Entity.Planet", b =>
@@ -138,7 +138,7 @@ namespace AliensStore.Data.Migrations
 
                     b.HasIndex("GalaxyId");
 
-                    b.ToTable("Planet");
+                    b.ToTable("Planet", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

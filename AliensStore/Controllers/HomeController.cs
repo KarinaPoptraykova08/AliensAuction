@@ -18,7 +18,12 @@ namespace AliensStore.Controllers
 			return View();
 		}
 
-		public IActionResult Privacy()
+        public IActionResult QueenPage()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
 		{
 			return View();
 		}

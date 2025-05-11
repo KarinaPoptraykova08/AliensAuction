@@ -56,6 +56,7 @@ namespace AliensStore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("FirstName,LastName,CurrentBalance,Id")] Dealer dealer)
         {
+            
             if (ModelState.IsValid)
             {
                 _context.Add(dealer);

@@ -6,9 +6,13 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (User.IsInRole("Queen"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+
 <table class="table">
     <thead>
         <tr>
@@ -52,50 +56,54 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CoinsPerDay)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Color)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Legs)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Arms)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Eyes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsForSale)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Planet.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dealer.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImageUrl)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CoinsPerDay)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Legs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Arms)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Eyes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsForSale)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Planet.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dealer.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImageUrl)
+                </td>
+                <td>
+                    @if (User.IsInRole("Queen"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    }
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
