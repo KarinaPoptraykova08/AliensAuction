@@ -4,9 +4,17 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+@section Styles {
+    <link rel="stylesheet" href="/css/creategalaxy.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+}
 
-<h4>Galaxy</h4>
+<h1>Create</h1>
+<div class="wrapper">   
+    <div class="lodinbox">
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -17,16 +25,19 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="button">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="backtolist mt-3">
+    <a asp-action="Index">&larr;Back to List</a>
 </div>
+  </div>
+</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -1,18 +1,24 @@
 ﻿@model IEnumerable<AliensStore.Data.Entity.Alien>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "New Lifeform";
+}
+@section Styles {
+    <link rel="stylesheet" href="/css/indexalien.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 }
 
-<h1>Index</h1>
-
-@if (User.IsInRole("Queen"))
-{
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-}
-
+<h1>New Lifeform? No Problem.</h1>
+<div class="backtolist mt-3">
+<p>
+    <a asp-action="Create">Create Alien</a>
+</p>
+</div>
+    <div class="wrapper">   
+    <div class="lodinbox">
 <table class="table">
     <thead>
         <tr>
@@ -40,15 +46,15 @@
             <th>
                 @Html.DisplayNameFor(model => model.Eyes)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.IsForSale)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Planet)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Dealer)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.ImageUrl)
             </th>
@@ -56,54 +62,53 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CoinsPerDay)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Age)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Color)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Legs)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Arms)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Eyes)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IsForSale)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Planet.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Dealer.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ImageUrl)
-                </td>
-                <td>
-                    @if (User.IsInRole("Queen"))
-                    {
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                    }
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                </td>
-            </tr>
-        }
+    
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoinsPerDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Legs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Arms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eyes)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.IsForSale)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Planet.Id)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Dealer.Id)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </div>
+        </div>
     </tbody>
 </table>

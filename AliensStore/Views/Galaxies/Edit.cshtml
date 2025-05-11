@@ -3,11 +3,19 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
+@section Styles {
+    <link rel="stylesheet" href="/css/editgalaxy.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+}
 <h1>Edit</h1>
 
-<h4>Galaxy</h4>
+
 <hr />
+<div class="wrapper">   
+    <div class="lodinbox">
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -26,7 +34,9 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">&larr;Back to List</a>
+</div>
+  </div>
 </div>
 
 @section Scripts {

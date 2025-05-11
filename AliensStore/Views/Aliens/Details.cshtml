@@ -3,9 +3,17 @@
 @{
     ViewData["Title"] = "Details";
 }
+@section Styles {
+    <link rel="stylesheet" href="/css/detailsalien.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+}
 
 <h1>Details</h1>
-
+<div class="wrapper">   
+    <div class="lodinbox">
 <div>
     <h4>Alien</h4>
     <hr />
@@ -58,24 +66,24 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Eyes)
         </dd>
-        <dt class = "col-sm-2">
+         @*<dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.IsForSale)
         </dt>
-        <dd class = "col-sm-10">
+       <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.IsForSale)
-        </dd>
+        </dd>*@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Planet)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Planet.Id)
         </dd>
-        <dt class = "col-sm-2">
+         @*<dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Dealer)
         </dt>
-        <dd class = "col-sm-10">
+       <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Dealer.Id)
-        </dd>
+        </dd>*@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ImageUrl)
         </dt>
@@ -84,7 +92,9 @@
         </dd>
     </dl>
 </div>
-<div>
+<div class="backtolist mt-3">
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">&larr;Back to List</a>
+</div>
+    </div>
 </div>

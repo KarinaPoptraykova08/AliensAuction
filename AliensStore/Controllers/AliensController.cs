@@ -49,7 +49,7 @@ namespace AliensStore.Controllers
         // GET: Aliens/Create
         public IActionResult Create()
         {
-            ViewData["DealerId"] = new SelectList(_context.Set<Dealer>(), "Id", "Id");
+            // ViewData["DealerId"] = new SelectList(_context.Set<Dealer>(), "Id", "Id");
             ViewData["PlanetId"] = new SelectList(_context.Planet, "Id", "Id");
             return View();
         }
@@ -60,14 +60,29 @@ namespace AliensStore.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Name,Price,CoinsPerDay,Age,Color,Legs,Arms,Eyes,IsForSale,PlanetId,DealerId,ImageUrl,Id")] Alien alien)
+        //  public async Task<IActionResult> Create([Bind("Name,Price,CoinsPerDay,Age,Color,Legs,Arms,Eyes,PlanetId,ImageUrl,Id")] Alien alien)
         {
             if (ModelState.IsValid)
             {
+                alien.DealerId = null;
+                alien.IsForSale = true;
+
                 _context.Add(alien);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DealerId"] = new SelectList(_context.Set<Dealer>(), "Id", "Id", alien.DealerId);
+            foreach (var key in ModelState.Keys)
+            {
+                var value = ModelState[key];
+                if (value.Errors.Any())
+                {
+                    foreach (var error in value.Errors)
+                    {
+                        Console.WriteLine(error.ErrorMessage);
+                    }
+                }
+            }
+            //ViewData["DealerId"] = new SelectList(_context.Set<Dealer>(), "Id", "Id", alien.DealerId);
             ViewData["PlanetId"] = new SelectList(_context.Planet, "Id", "Id", alien.PlanetId);
             return View(alien);
         }
@@ -121,6 +136,17 @@ namespace AliensStore.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
+            }
+            foreach (var key in ModelState.Keys)
+            {
+                var value = ModelState[key];
+                if (value.Errors.Any())
+                {
+                    foreach (var error in value.Errors)
+                    {
+                        Console.WriteLine(error.ErrorMessage);
+                    }
+                }
             }
             ViewData["DealerId"] = new SelectList(_context.Set<Dealer>(), "Id", "Id", alien.DealerId);
             ViewData["PlanetId"] = new SelectList(_context.Planet, "Id", "Id", alien.PlanetId);

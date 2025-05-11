@@ -46,3 +46,30 @@ button.accept-policy[b-sllusxrtap] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+.navbar[b-sllusxrtap] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 11vh;
+  border-radius: 30px;
+  backdrop-filter: blur(25px);
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: rgb(185, 235, 191);
+}
+.navbar a[b-sllusxrtap] {
+  color: white !important;
+}
+.navbar .nav-link[b-sllusxrtap],
+.navbar .navbar-brand[b-sllusxrtap] {
+  color: white !important;
+}
+.navbar .nav-link:hover[b-sllusxrtap],
+.navbar .navbar-brand:hover[b-sllusxrtap] {
+  text-decoration: underline;
+  color: #f0f0f0 !important;
+}

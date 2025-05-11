@@ -3,11 +3,19 @@
 @{
     ViewData["Title"] = "Edit";
 }
+@section Styles {
+    <link rel="stylesheet" href="/css/editalien.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+}
 
-<h1>Edit</h1>
+<h1>Edit Alien</h1>
 
-<h4>Alien</h4>
 <hr />
+<div class="wrapper">   
+    <div class="lodinbox">
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -52,21 +60,21 @@
                 <input asp-for="Eyes" class="form-control" />
                 <span asp-validation-for="Eyes" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
+           @* <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="IsForSale" /> @Html.DisplayNameFor(model => model.IsForSale)
                 </label>
-            </div>
+            </div>*@
             <div class="form-group">
                 <label asp-for="PlanetId" class="control-label"></label>
                 <select asp-for="PlanetId" class="form-control" asp-items="ViewBag.PlanetId"></select>
                 <span asp-validation-for="PlanetId" class="text-danger"></span>
             </div>
-            <div class="form-group">
+           @* <div class="form-group">
                 <label asp-for="DealerId" class="control-label"></label>
                 <select asp-for="DealerId" class="form-control" asp-items="ViewBag.DealerId"></select>
                 <span asp-validation-for="DealerId" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
                 <label asp-for="ImageUrl" class="control-label"></label>
                 <input asp-for="ImageUrl" class="form-control" />
@@ -74,14 +82,18 @@
             </div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
+                <div class=" button">
                 <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="backtolist mt-3">
+    <a asp-action="Index">&larr;Back to List</a>
+</div>
+    </div>
 </div>
 
 @section Scripts {

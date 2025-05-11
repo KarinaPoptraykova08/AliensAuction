@@ -5,9 +5,9 @@
 }
 
 <h1>Create</h1>
-
-<h4>Dealer</h4>
 <hr />
+<div class="wrapper">   
+    <div class="lodinbox">
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
@@ -37,6 +37,9 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+  </div>
+</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

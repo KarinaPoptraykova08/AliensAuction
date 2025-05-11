@@ -4,83 +4,94 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+@section Styles {
+    <link rel="stylesheet" href="/css/CreateAlien.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+}
 
-<h4>Alien</h4>
+<h1>Create an Alien</h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="wrapper">   
+    <div class="lodinbox">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Name</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+                <label asp-for="Price" class="control-label">Price</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="CoinsPerDay" class="control-label"></label>
+                <label asp-for="CoinsPerDay" class="control-label">Coins per day</label>
                 <input asp-for="CoinsPerDay" class="form-control" />
                 <span asp-validation-for="CoinsPerDay" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Age" class="control-label"></label>
+                <label asp-for="Age" class="control-label">Age</label>
                 <input asp-for="Age" class="form-control" />
                 <span asp-validation-for="Age" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Color" class="control-label"></label>
+                <label asp-for="Color" class="control-label">Color</label>
                 <input asp-for="Color" class="form-control" />
                 <span asp-validation-for="Color" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Legs" class="control-label"></label>
+                <label asp-for="Legs" class="control-label">Legs</label>
                 <input asp-for="Legs" class="form-control" />
                 <span asp-validation-for="Legs" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Arms" class="control-label"></label>
+                <label asp-for="Arms" class="control-label">Arms</label>
                 <input asp-for="Arms" class="form-control" />
                 <span asp-validation-for="Arms" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Eyes" class="control-label"></label>
+                <label asp-for="Eyes" class="control-label">Eyes</label>
                 <input asp-for="Eyes" class="form-control" />
                 <span asp-validation-for="Eyes" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsForSale" /> @Html.DisplayNameFor(model => model.IsForSale)
-                </label>
-            </div>
+
+         
+
             <div class="form-group">
-                <label asp-for="PlanetId" class="control-label"></label>
-                <select asp-for="PlanetId" class ="form-control" asp-items="ViewBag.PlanetId"></select>
+                <label asp-for="PlanetId" class="control-label">Planet</label>
+                <select asp-for="PlanetId" class="form-control" asp-items="ViewBag.PlanetId"></select>
             </div>
+
+         
             <div class="form-group">
-                <label asp-for="DealerId" class="control-label"></label>
-                <select asp-for="DealerId" class ="form-control" asp-items="ViewBag.DealerId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"></label>
+                <label asp-for="ImageUrl" class="control-label">Image</label>
                 <input asp-for="ImageUrl" class="form-control" />
                 <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="button">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
+
+        <div class="backtolist mt-3">
+            <a asp-action="Index">&larr; Back to List</a>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <partial name="_ValidationScriptsPartial" />
 }
